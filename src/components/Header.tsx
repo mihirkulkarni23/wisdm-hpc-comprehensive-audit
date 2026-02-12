@@ -21,15 +21,23 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4">
-        <a href="https://wisdmlabs.com" aria-label="WisdmLabs Home">
+        <a
+          href="https://wisdmlabs.com"
+          aria-label="WisdmLabs Home"
+          className="flex items-center gap-2.5"
+        >
           <Image
             src="https://wisdmlabs.com/wp-content/uploads/2023/12/cropped-wisdmlabs-logo.webp"
             alt="WisdmLabs"
-            width={160}
-            height={40}
-            className="h-9 w-auto"
+            width={200}
+            height={50}
+            className="h-11 w-auto"
             priority
           />
+          <span className="font-poppins text-lg font-bold tracking-wide">
+            <span className="text-[#4A4A4A]">WISDM</span>
+            <span className="text-[#960000]">LABS</span>
+          </span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

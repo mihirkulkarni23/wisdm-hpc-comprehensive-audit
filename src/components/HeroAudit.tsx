@@ -1,5 +1,12 @@
 "use client";
 
+declare global {
+  interface Window {
+    dataLayer?: any[];
+  }
+}
+
+
 import { useState, useEffect, type FormEvent } from "react";
 
 interface FormData {
@@ -76,7 +83,11 @@ export default function HeroAudit() {
       }
 
       setSubmitted(true);
-    } catch (err: unknown) {
+      if (typeof window !== "undefined") {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: "free_audit_submit_success" });
+      }
+          } catch (err: unknown) {
       const message =
         err instanceof Error
           ? err.message

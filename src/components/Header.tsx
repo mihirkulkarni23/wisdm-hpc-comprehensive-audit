@@ -60,7 +60,7 @@ export default function Header() {
 
         <a
           href="#hero-form"
-          className="rounded-lg bg-[#960000] px-5 py-2.5 font-poppins text-sm font-semibold text-white shadow-[0_1px_2px_rgba(150,0,0,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#7A0000] hover:shadow-[0_2px_8px_rgba(150,0,0,0.25)] active:scale-[0.98]"
+          className="rounded-lg bg-[#960000] px-3 py-1.5 text-xs md:px-5 md:py-2.5 md:text-sm font-poppins font-semibold text-white shadow-[0_1px_2px_rgba(150,0,0,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#7A0000] hover:shadow-[0_2px_8px_rgba(150,0,0,0.25)] active:scale-[0.98]"
         >
           Get Your Free Audit
         </a>
